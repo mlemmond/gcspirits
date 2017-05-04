@@ -1,0 +1,96 @@
+@base-color: #27AAE1; 
+@base-color-dark : #04709F;
+@base-color-light : #ecf0f1;
+@hyperlink:blue;
+@base-color2: #F8981D;
+@base-color2-light: lighten(@base-color2, 20%);
+
+@margin-top: 70px;
+
+
+
+.body-content {
+  margin-top: @margin-top;
+  font-family: "PT Sans";
+  font-size: 24pt;
+  
+}
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    .body-content {
+      margin-top: @margin-top - 10;
+      font-size: 16pt;
+    }
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .7s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active for <2.1.8 */ {
+  opacity: 0;
+}
+
+.text-primary{
+  color: @base-color;
+}
+
+.navbar-nav i.fa {
+    margin-right: 10px;
+    color: @base-color2;
+}
+
+.page-logo{
+  background-image: url("../components/home/assets/notextbanner.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;  
+  opacity: 0.7;
+  vertical-align: middle;
+  min-height: 335px;
+  filter: alpha(opacity=70); /* For IE8 and earlier */  
+}
+
+.navbar-toggle.navbar-left {
+  float: left;
+  margin-left: 10px;
+  color: @base-color;
+}
+
+.navbar-default {
+  background-color: @base-color-light;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 2px 20px;
+  width: auto;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus
+{
+  color: @base-color;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: @base-color2;
+}
+
+/* Highlighting rules for nav menu items */
+.navbar li a.router-link-active,
+.navbar li a.router-link-active:focus,
+.navbar li a.router-link-active:hover
+ {
+    background-color: @base-color;
+    color: @base-color2;
+    font-weight: bold;
+}
+
+
+
+

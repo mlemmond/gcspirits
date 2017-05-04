@@ -1,0 +1,14 @@
+<template>
+    <div id='app-root' class="container">
+        <menu-component />
+        <div class="body-content">
+            <transition <transition name="component-fade" mode="out-in">
+                <router-view></router-view>
+            </transition>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</template>
+
+<script src="./app.ts"></script>

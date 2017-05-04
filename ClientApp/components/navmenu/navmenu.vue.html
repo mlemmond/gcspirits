@@ -1,0 +1,34 @@
+<template>
+    <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#navMenu">
+                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                </button>
+                <a class="navbar-brand">
+                    <img alt="Coastal Spirits" src="./assets/gulf_coast_spirits.svg" />
+                </a>
+            </div>
+                <div class="navbar-collapse collapse" id="navMenu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <router-link to="/" :exact="true" data-toggle="collapse" data-target=".navbar-collapse.in">
+                                <i class="fa fa-home fa-lg" aria-hidden="true"></i>HOME
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/counter" data-toggle="collapse" data-target=".navbar-collapse.in">
+                                 <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>ORDER ONLINE
+                            </router-link>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+    </div>
+</template>
+
+<style src="./navmenu.less" />
+<script src="./navmenu.ts"/>
