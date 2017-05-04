@@ -1,6 +1,6 @@
 @base-color: #27AAE1; 
 @base-color-dark : #04709F;
-@base-color-light : #ecf0f1;
+@base-color-light :  lighten(@base-color, 40%);
 @hyperlink:blue;
 @base-color2: #F8981D;
 @base-color2-light: lighten(@base-color2, 20%);
@@ -12,14 +12,14 @@
 .body-content {
   margin-top: @margin-top;
   font-family: "PT Sans";
-  font-size: 24pt;
-  
+  font-size: 16pt;
+  color: @base-color
 }
 @media (max-width: 767px) {
     /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
     .body-content {
       margin-top: @margin-top - 10;
-      font-size: 16pt;
+      font-size: 14pt;
     }
 }
 
@@ -35,9 +35,13 @@
   color: @base-color;
 }
 
-.navbar-nav i.fa {
-    margin-right: 10px;
+i.fa {
+    margin-right: 12px;
     color: @base-color2;
+}
+
+.well{
+  background-color: @base-color-light;
 }
 
 .page-logo{

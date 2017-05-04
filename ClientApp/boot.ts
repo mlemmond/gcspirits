@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 const routes = [
     { path: '/', component: require('./components/home/home.vue.html') },
     { path: '/shop', component: require('./components/shop/shop.vue.html') },
-    { path: '/fetchdata', component: require('./components/fetchdata/fetchdata.vue.html') }
+    { path: '/contact', component: require('./components/contact/contact.vue.html') },
 ];
 
 new Vue({
