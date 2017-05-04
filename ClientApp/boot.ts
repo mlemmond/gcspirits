@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 
 const routes = [
     { path: '/', component: require('./components/home/home.vue.html') },
-    { path: '/counter', component: require('./components/counter/counter.vue.html') },
+    { path: '/shop', component: require('./components/shop/shop.vue.html') },
     { path: '/fetchdata', component: require('./components/fetchdata/fetchdata.vue.html') }
 ];
 
